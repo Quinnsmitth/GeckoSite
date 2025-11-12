@@ -1,29 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Final Project Gecko Site - Cameron Noce, Quinn Smith</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Project Gecko Site - Cameron Noce, Quinn Smith</title>
+  <link rel="stylesheet" href="css/index.css">
 </head>
-<nav>
-    <a href="pages/index.html">Home</a>
-    <a href="pages/about.html">About Us</a>
-    <a href="pages/care.html">Care Guides</a>
-    <a href="pages/forum.html">Forum</a>
-    <a href="pages/resources.html">Resources</a>
-</nav>
+
 <body>
-    <h1>Welcome to the Final Project Gecko Site!</h1>
+  <header>
+    <nav>
+      <a href="pages/index.html">Home</a>
+      <a href="pages/about.html">About Us</a>
+      <a href="pages/care.html">Care Guides</a>
+      <a href="pages/forum.html">Forum</a>
+      <a href="pages/resources.html">Resources</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Welcome to the Gecko Site!</h1>
     <p>This website is dedicated to all things geckos. Here, you can learn about different gecko species, how to care for them, and view a gallery of beautiful gecko images.</p>
-    <h2>Explore the Site</h2>
-    <ul>
-        <li><a href="pages/about.html">About Us</a> - Learn more about the creators of this site.</li>
-        <li><a href="pages/care.html">Care Guides</a> - </li>
-        <li><a href="pages/forum.html">Gecko Forum</a> - Find tips and advice on how to properly care for your gecko from other keepers.</li>
-        <li><a href="pages/resources.html">Extra Resources</a> - Other helpful and reliable resources</li>
-    </ul>
-    <footer>
-        <p>&copy; 2025 Cameron Noce and Quinn Smith</p>
-    </footer>
 
+    <div class="card-grid">
+      <!-- Card 1 -->
+      <a class="card" href="pages/care.html">
+        <img class="card-img" src="images/care.jpg" alt="Crested gecko on branch">
+        <div class="card-body">
+          <h3 class="card-title">Care Guides</h3>
+          <p class="card-sub">Learn how to care for your gecko species properly.</p>
+        </div>
+      </a>
 
+      <!-- Card 2 -->
+      <a class="card" href="pages/forum.html">
+        <img class="card-img" src="images/forum.jpg" alt="Online discussion about geckos">
+        <div class="card-body">
+          <h3 class="card-title">Forum</h3>
+          <p class="card-sub">Join the community and share gecko experiences.</p>
+        </div>
+      </a>
+
+      <!-- Card 3 -->
+      <a class="card" href="pages/resources.html">
+        <img class="card-img" src="images/resources.jpg" alt="Collection of gecko books and guides">
+        <div class="card-body">
+          <h3 class="card-title">Resources</h3>
+          <p class="card-sub">Access trusted information and links for gecko owners.</p>
+        </div>
+      </a>
+
+      <!-- Card 4 -->
+      <a class="card" href="pages/about.html">
+        <img class="card-img" src="images/about.jpeg" alt="The Gecko Site team">
+        <div class="card-body">
+          <h3 class="card-title">About Us</h3>
+          <p class="card-sub">Meet the creators behind the Gecko Site.</p>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cameron Noce and Quinn Smith</p>
+  </footer>
+</body>
 </html>
