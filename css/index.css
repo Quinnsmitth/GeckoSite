@@ -1,18 +1,36 @@
-nav{
-  background-color: #5a534e; 
+/* Headings use Playfair Display */
+h1, h2, h3, .heading {
+  font-family: "Playfair Display", serif;
+  color: #f4f3ee;
+  font-weight: 600;
+}
+
+/* Body text uses Inter */
+body, p, .inter {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+nav {
+  background-color: #5a534e;
   padding: 1rem;
   text-align: center;
   font-size: 1.5rem;
-  color: #f4f3ee; 
+  color: #f4f3ee;
   font-weight: bold;
+  font-family: "Playfair Display", serif;
 }
+
+
+
 body {
-  background-color: #8a817c; 
+  background-color: #8a817c;
   margin: 0;
   padding: 0;
-  font-family: system-ui, sans-serif;
-  color: #f4f3ee; 
+  color: #f4f3ee;
 }
+
+
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -23,25 +41,24 @@ body {
 }
 
 
+
 .card {
   display: block;
   border-radius: 12px;
   overflow: hidden;
   text-decoration: none;
-  background: #463f3a; /* dark earthy card color */
+  background: #463f3a; /* card background */
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
   transition: transform 200ms ease, box-shadow 200ms ease, border 150ms ease;
   color: #e1db66; /* soft gold text */
   outline: none;
 }
 
-
 .card-img {
   width: 100%;
   height: 170px;
   display: block;
 }
-
 
 .card-body {
   padding: 0.75rem 0.9rem;
@@ -52,26 +69,28 @@ body {
   );
 }
 
-
 .card-title {
   margin: 0 0 0.3rem 0;
   font-size: 1.05rem;
   line-height: 1.1;
   font-weight: 600;
   color: #e1db66;
+  font-family: "Playfair Display", serif;
 }
 
 .card-sub {
   margin: 0;
   font-size: 0.9rem;
-  color: #cfc9c5; 
+  color: #cfc9c5;
+  font-family: "Inter", sans-serif;
 }
+
 
 .card:hover,
 .card:focus {
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-  border: 1px solid #8a9c30; 
+  border: 1px solid #8a9c30; /* accent color */
 }
 
 .card:focus-visible {
@@ -80,13 +99,17 @@ body {
     0 0 0 4px rgba(138,156,48,0.35);
   border-radius: 12px;
 }
+
 footer {
-  background-color: #5a534e; 
+  background-color: #5a534e;
   padding: 1rem;
   text-align: center;
   font-size: 1rem;
-  color: #f4f3ee; 
+  color: #f4f3ee;
+  font-family: "Inter", sans-serif;
 }
+
+
 @media (max-width: 640px) {
   .card-grid {
     grid-template-columns: 1fr;
