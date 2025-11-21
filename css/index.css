@@ -3,11 +3,13 @@ h1, h2, h3, .heading {
   font-family: "Playfair Display", serif;
   color: #f4f3ee;
   font-weight: 600;
+  text-align: center;
 }
 
 /* Body text uses Inter */
 body, p, .inter {
   font-family: "Inter", system-ui, sans-serif;
+  text-align: center;
 }
 
 nav {
@@ -19,8 +21,6 @@ nav {
   font-weight: bold;
   font-family: "Playfair Display", serif;
 }
-
-
 
 body {
   background-color: #8a817c;
@@ -34,7 +34,7 @@ body {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 4rem;
   max-width: 1100px;
   margin: 0 auto;
   padding: 1rem;
