@@ -1,99 +1,96 @@
-/* Inherit fonts + general theme */
+/* --- GLOBAL SITE STYLES --- */
+
 body {
   background-color: #8a817c;
   margin: 0;
   padding: 0;
-  color: #f4f3ee;
   font-family: "Inter", sans-serif;
+  color: #f4f3ee;
   text-align: center;
 }
 
-/* Nav matches your homepage */
+h1, h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  color: #f4f3ee;
+}
+
+p {
+  max-width: 750px;
+  margin: 0.5rem auto;
+  line-height: 1.7;
+  text-align: left;
+}
+
+/* --- NAVIGATION --- */
+
 nav {
   background-color: #5a534e;
   padding: 1rem;
   font-size: 1.5rem;
-  font-family: "Playfair Display", serif;
   font-weight: bold;
-  color: #f4f3ee;
+  font-family: "Playfair Display", serif;
 }
 
-/* Header styled to match your theme */
+nav a {
+  color: #f4f3ee;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* --- HEADER --- */
+
 .care-header {
   padding: 2rem 1rem;
 }
 
-.care-header h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
+/* --- GRID LAYOUT --- */
 
-.care-header p {
-  font-family: "Inter", sans-serif;
-  font-size: 1.1rem;
-  color: #f4f3ee;
-}
-
-/* Grid layout matching your card grid spacing */
 .care-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem;
-  max-width: 1100px;
-  margin: 2rem auto;
-  padding: 1rem;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
 }
 
-/* Care cards styled like your home cards */
-.care-card {
-  background: #463f3a;
-  padding: 1.8rem;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-  color: #f4f3ee;
-  transition: transform 180ms ease, box-shadow 180ms ease, border 150ms ease;
-  border: 1px solid transparent;
+.care-grid section {
+  text-align: center;
 }
 
-.care-card:hover,
-.care-card:focus {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-  border: 1px solid #8a9c30;
+/* Images styled to match theme */
+.care-grid img {
+  width: 100%;
+  border-radius: 12px;  
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
 }
 
-.care-card h2 {
-  font-family: "Playfair Display", serif;
-  color: #e1db66;
-  margin-bottom: 0.7rem;
-}
+/* --- FOOTER --- */
 
-/* Footer matches site theme */
 footer {
   background-color: #5a534e;
   padding: 1rem;
-  margin-top: 3rem;
   color: #f4f3ee;
   font-family: "Inter", sans-serif;
 }
 
-/* ----------- Responsive Layout ----------- */
+/* --- RESPONSIVE --- */
 
-/* Tablet */
 @media (max-width: 900px) {
   .care-grid {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 }
 
-/* Mobile */
-@media (max-width: 600px) {
-  .care-header h1 {
-    font-size: 2rem;
-  }
-
-  .care-card {
-    padding: 1.4rem;
+@media (max-width: 640px) {
+  nav {
+    font-size: 1.2rem;
   }
 }
