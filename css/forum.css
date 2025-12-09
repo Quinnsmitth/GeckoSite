@@ -1,0 +1,65 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #e0f7f2;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #2c9c69;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.new-post, .posts {
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.new-post input, .new-post textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.new-post button {
+    background: #2c9c69;
+    border: none;
+    color: white;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.new-post button:hover {
+    background: #257a54;
+}
+
+.post-card {
+    background: #f9fff9;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border-left: 5px solid #2c9c69;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.post-card h3 {
+    margin: 0 0 5px 0;
+}
+
+.post-card p {
+    white-space: pre-wrap;
+}

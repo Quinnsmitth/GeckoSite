@@ -4,7 +4,38 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gecko Site Forum - Cameron Noce, Quinn Smith</title>
+  //Main site stylesheet
   <link rel="stylesheet" href="../css/index.css">
+  //Forum stylesheet
+  <link rel="stylesheet" href="../css/forum.css">
 </head>
-<p>helloworld from forum</p>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="care.html">Care Guides</a>
+      <a href="forum.html">Forum</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+  </header>
+<header class="header">
+        <h1>Gecko Forum</h1>
+        <p>Share tips, stories, and pics of your geckos!</p>
+    </header>
+
+    <section class="new-post">
+        <h2>Create a Post</h2>
+        <input type="text" id="postTitle" placeholder="Post title">
+        <textarea id="postContent" placeholder="Write something"></textarea>
+        <button id="postBtn">Post</button>
+    </section>
+
+    <section class="posts">
+        <h2>Recent Posts</h2>
+        <div id="postList"></div>
+    </section>
+
+    <script src="forum.js"></script>
+</body>
 </html>
