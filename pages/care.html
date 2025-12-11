@@ -4,8 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crested Gecko Care Guide</title>
+
   <link rel="stylesheet" href="../css/care.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -29,25 +32,40 @@
       <h2>Introduction to Crested Geckos</h2>
       <img src="../images/IntroGecko.jpg" alt="Crested Gecko">
       <p>
-        Crested geckos (Correlophus ciliatus) are arboreal lizards native to the humid rainforests of New Caledonia.
-        Once believed to be extinct until their rediscovery in 1994, they quickly became one of the most popular pet reptiles due to their gentle temperament and low-maintenance care requirements.
-        Cresties do not require complicated heating, can thrive in room-temperature environments, and do not need live insects as a primary food source, making them ideal for both beginners and experienced keepers.
-        They are known for the “eyelash-like” crests above their eyes, sticky toe pads for climbing, and their ability to drop their tail (which does not grow back).
+        Crested geckos (Correlophus ciliatus) are arboreal lizards native to the humid rainforests
+        of New Caledonia. Once believed to be extinct until their rediscovery in 1994, they quickly
+        became one of the most popular pet reptiles due to their gentle temperament and low-maintenance
+        care requirements. Cresties do not require complicated heating, can thrive in room-temperature
+        environments, and do not need live insects as a primary food source, making them ideal for both
+        beginners and experienced keepers. They are known for the “eyelash-like” crests above their eyes,
+        sticky toe pads for climbing, and their ability to drop their tail (which does not grow back).
         With proper care, a crested gecko can live 15–20 years in captivity.
       </p>
+    </section>
+
+    <section>
+      <h2>Growth & Development</h2>
+      <p>
+        Crested geckos grow rapidly during their first two years of life. The chart below illustrates
+        typical healthy weight gain for male and female crested geckos over time. Individual growth
+        rates may vary depending on diet, genetics, and husbandry conditions.
+      </p>
+      <canvas id="geckoGrowthChart" style="max-width:100%; height:350px;"></canvas>
     </section>
 
     <section>
       <h2>Bioactive vs Non-Bioactive Enclosures</h2>
       <img src="../images/bio1.jpg" alt="Bioactive enclosure">
       <p>
-         A bioactive enclosure is a self-sustaining ecosystem designed to mimic a natural rainforest floor.
-         It typically includes live plants, natural substrate layers (drainage, soil, leaf litter), and a clean-up crew of springtails and isopods that help break down waste and prevent mold.
-         This type of setup provides mental stimulation, higher humidity stability, and a visually appealing display.
-         A non-bioactive enclosure, on the other hand, uses substrates like paper towels, reptile carpet, or coconut fiber that must be cleaned or replaced regularly.
-         These setups require less initial work, allow easier monitoring of waste and hydration levels, and are often recommended for new keepers who want a simple maintenance routine.
-         Both enclosure types are safe and healthy as long as they are kept clean and allow the gecko to hide, climb, and thermoregulate.
-         Your choice ultimately depends on how much upkeep you prefer and whether you enjoy naturalistic enclosures.
+        A bioactive enclosure is a self-sustaining ecosystem designed to mimic a natural rainforest floor.
+        It typically includes live plants, natural substrate layers (drainage, soil, leaf litter), and a
+        clean-up crew of springtails and isopods that help break down waste and prevent mold. This type of
+        setup provides mental stimulation, higher humidity stability, and a visually appealing display.
+        A non-bioactive enclosure, on the other hand, uses substrates like paper towels, reptile carpet,
+        or coconut fiber that must be cleaned or replaced regularly. These setups require less initial
+        work, allow easier monitoring of waste and hydration levels, and are often recommended for new
+        keepers who want a simple maintenance routine. Both enclosure types are safe and healthy as long
+        as they are kept clean and allow the gecko to hide, climb, and thermoregulate.
       </p>
     </section>
 
@@ -55,42 +73,39 @@
       <h2>Feeding & Nutrition</h2>
       <img src="../images/geckoEat.webp" alt="Crested gecko eating">
       <p>
-         Crested geckos thrive on a diet centered around a complete powdered food mix known as CGD (Crested Gecko Diet).
-         This diet contains balanced vitamins, minerals, and proteins specifically formulated for their needs, and should be offered 3–4 times per week.
-         Fresh CGD should be mixed with water to a yogurt-like consistency and replaced every 24 hours.
-         While CGD can be the sole diet, many keepers supplement with insects like crickets or dubia roaches once or twice per week.
-         Insects should be appropriately sized (no larger than the space between the gecko’s eyes) and gut-loaded for added nutrition.
-         Always dust insects with a calcium + D3 supplement to prevent metabolic bone disease.
-         Treats like mashed fruit can be offered sparingly, but should never replace the main diet.
-         Clean water should always be available in a shallow dish even though most cresties prefer to drink droplets after misting.
+        Crested geckos thrive on a diet centered around a complete powdered food mix known as CGD
+        (Crested Gecko Diet). This diet contains balanced vitamins, minerals, and proteins specifically
+        formulated for their needs, and should be offered 3–4 times per week. Fresh CGD should be mixed
+        with water to a yogurt-like consistency and replaced every 24 hours. While CGD can be the sole
+        diet, many keepers supplement with insects like crickets or dubia roaches once or twice per week.
+        Insects should be appropriately sized (no larger than the space between the gecko’s eyes) and
+        gut-loaded for added nutrition. Always dust insects with a calcium + D3 supplement to prevent
+        metabolic bone disease. Treats like mashed fruit can be offered sparingly but should never
+        replace the main diet.
       </p>
     </section>
 
     <section>
       <h2>Humidity, Lighting, and Temperature</h2>
       <img src="../images/guide.webp" alt="Enclosure environment">
-        <p>
-         Proper environmental conditions are essential for keeping a crested gecko healthy.
-         Humidity should be maintained between 50–70%, with a nightly rise caused by misting the enclosure.
-         This allows for proper shedding, hydration, and overall comfort.
-         Good ventilation is equally important, as stagnant overly wet air can lead to respiratory issues.
-         Crested geckos are comfortable at typical household temperatures, ideally 72–78°F during the day and slightly cooler at night.
-         They should never be exposed to temperatures above 82°F, as overheating can quickly become fatal.
-         Unlike many reptiles, cresties do not require strong UVB lighting, but low-level UVB (2.0–5.0) has been shown to improve appetite, bone health, and day/night rhythm.
-         Lighting should follow a natural cycle of 12 hours of light and 12 hours of darkness to regulate their internal clock.
-        </p>
+      <p>
+        Proper environmental conditions are essential for keeping a crested gecko healthy. Humidity
+        should be maintained between 50–70% with nightly misting. Crested geckos are comfortable at
+        typical household temperatures, ideally 72–78°F during the day and slightly cooler at night.
+        Unlike many reptiles, cresties do not require strong UVB lighting, but low-level UVB can improve
+        appetite and bone health. Lighting should follow a natural 12-hour day/night cycle.
+      </p>
     </section>
 
     <section>
       <h2>Common Health Issues</h2>
       <img src="../images/health.jpg" alt="Crested gecko health">
-      <p>Crested geckos are hardy animals, but they can experience health issues if their environment or diet is incorrect.
-         Stuck shed is common when humidity is too low and can cause difficulty with toes, tail tips, and skin folds;
-         regular misting and hydration help prevent this. Metabolic Bone Disease (MBD) results from calcium deficiency and improper lighting or diet and leads to weak bones, shaking limbs, 
-         and deformities—this is easily prevented with proper CGD diet and calcium supplementation.
-         Dehydration can occur if humidity is too low or if the gecko does not drink regularly.
-         Signs include wrinkled skin, lethargy, and stuck shed. Impaction is another risk when ingesting loose substrate, especially in young or small geckos, so careful substrate choice is important.
-         Lastly, monitor for sudden weight loss, poor appetite, or unusual behavior, as these can indicate parasites or internal infections. When in doubt, a reptile veterinarian should be consulted.
+      <p>
+        Crested geckos are hardy animals, but improper care can lead to health issues such as stuck shed,
+        dehydration, metabolic bone disease, and impaction. Maintaining proper humidity, offering a
+        balanced diet, and monitoring weight and behavior are key to preventing these problems. Sudden
+        weight loss, lethargy, or loss of appetite should be addressed by consulting a reptile
+        veterinarian.
       </p>
     </section>
 
@@ -99,6 +114,8 @@
   <footer>
     Gecko Site Forum — 2025
   </footer>
+
+  <script src="../js/geckoGrowth.js"></script>
 
 </body>
 </html>
