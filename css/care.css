@@ -82,16 +82,63 @@ footer {
 
 /* --- RESPONSIVE --- */
 
-@media (max-width: 900px) {
-  .care-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-}
+/* --- RESPONSIVE --- */
 
+/* Phone */
 @media (max-width: 640px) {
   nav {
     font-size: 1.2rem;
   }
+
+  p {
+    padding: 0 1rem;
+    text-align: left;
+  }
+
+  .care-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 2rem 1rem;
+  }
 }
-/*Need another media query*/
+
+/* iPad */
+@media (min-width: 768px) {
+  .care-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem;
+    padding: 3rem 2.5rem;
+  }
+
+  p {
+    max-width: 800px;
+  }
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+  .care-grid {
+    max-width: 1100px;
+    gap: 4rem;
+  }
+
+  nav {
+    font-size: 1.45rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  .care-grid {
+    max-width: 1200px;
+    padding: 4rem 3rem;
+  }
+
+  nav {
+    font-size: 1.6rem;
+  }
+
+  p {
+    max-width: 850px;
+  }
+}

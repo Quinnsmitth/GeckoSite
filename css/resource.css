@@ -64,4 +64,72 @@
 .product-card a:hover {
   text-decoration: underline;
 }
-/*Need 3 more  media query*/
+/* --- RESPONSIVE --- */
+
+/* Phone */
+@media (max-width: 640px) {
+  .link-list a {
+    font-size: 1rem;
+  }
+
+  .gallery img {
+    height: 200px;
+  }
+
+  .product-scroll {
+    gap: 1.25rem;
+    padding: 1rem;
+  }
+
+  .product-card {
+    min-width: 230px;
+  }
+
+  .product-card img {
+    height: 140px;
+  }
+}
+
+/*  iPad */
+@media (min-width: 768px) {
+  .gallery {
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+
+  .gallery img {
+    height: 230px;
+  }
+
+  .product-scroll {
+    gap: 2.5rem;
+    padding: 2rem;
+  }
+
+  .product-card {
+    min-width: 280px;
+  }
+}
+
+/* Laptop & Desktop */
+@media (min-width: 1024px) {
+  .gallery {
+    max-width: 1300px;
+  }
+
+  .gallery img {
+    height: 250px;
+  }
+
+  .product-card {
+    min-width: 300px;
+  }
+
+  .product-card img {
+    height: 180px;
+  }
+
+  .link-list a {
+    font-size: 1.15rem;
+  }
+}

@@ -63,3 +63,66 @@ body {
 .post-card p {
     white-space: pre-wrap;
 }
+/* --- RESPONSIVE --- */
+
+/*  Phone */
+@media (max-width: 640px) {
+  .header {
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+
+  .new-post, .posts {
+    width: 95%;
+    padding: 16px;
+  }
+
+  .new-post input,
+  .new-post textarea,
+  .new-post button {
+    font-size: 15px;
+  }
+}
+
+/*  iPad */
+@media (min-width: 768px) {
+  .new-post, .posts {
+    max-width: 750px;
+  }
+
+  .header {
+    padding: 32px;
+    font-size: 1.05rem;
+  }
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+  .new-post, .posts {
+    max-width: 850px;
+  }
+
+  body {
+    font-size: 1.02rem;
+  }
+
+  .header {
+    font-size: 1.1rem;
+  }
+}
+
+/*  Desktop */
+@media (min-width: 1280px) {
+  .new-post, .posts {
+    max-width: 950px;
+  }
+
+  .header {
+    padding: 40px;
+    font-size: 1.15rem;
+  }
+
+  body {
+    font-size: 1.05rem;
+  }
+}
