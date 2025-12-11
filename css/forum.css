@@ -5,6 +5,26 @@ body {
     padding: 0;
 }
 
+h2 {
+    font-family: 'Georgia', serif;
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+}
+
+div#postList {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+  color: #000000;
+}
+
+h3{
+    margin: 0;
+    font-size: 1.2rem;
+    color: black;
+}
+
 .header {
     background: #2c9c69;
     color: white;
