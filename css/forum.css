@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #e0f7f2;
+    background-color:grey;
     margin: 0;
     padding: 0;
 }
@@ -26,7 +26,7 @@ h3{
 }
 
 .header {
-    background: #2c9c69;
+    background: #cfc9c5;
     color: white;
     padding: 30px;
     text-align: center;
